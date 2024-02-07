@@ -1,0 +1,29 @@
+/*전위 순회의 방법은 다음과 같다.
+
+1. 노드를 방문한다.
+
+2. 왼쪽 서브 트리를 전위 순회한다.
+
+3. 오른쪽 서브 트리를 전위 순회한다.
+
+예를 들어 abcdefg가 입력되면, abdecfg. */
+
+# include <bits/stdc++.h>
+using namespace std;
+string b;
+void f(int a,int p) ///현재 위치 
+{
+  if(a>p) return;
+  
+  cout<<b[a];
+  f(a*2,p);
+  f(a*2+1,p);
+}
+int main(){
+    
+    cin>>b;
+    b="0"+b;
+    cout << b;
+    return 0;
+    f(1,b.size()-1);
+}
