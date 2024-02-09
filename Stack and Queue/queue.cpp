@@ -1,14 +1,6 @@
-//C++에서는 기본적으로 queue 자료구조를 지원한다 -- STLqueue
-//header에 #include <queue> 추가 (STL queue일 경우)
-//queue <데이터 타입> 이름;
-///// STL Queue
-
-#include <iostream>
-#include <queue>
-
+# include <bits/stdc++.h>
 using namespace std;
-
-int main(void) {
+int main() {
     queue<int>Q; // 비어있는 int타입의 queue 선언
     Q.push(1); // 1
     Q.push(2); // 1 2
