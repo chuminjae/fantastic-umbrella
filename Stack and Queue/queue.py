@@ -7,5 +7,16 @@ Q = queue.Queue()
 Q.put(1) # 1
 Q.put("could_dragon") # 1 cloud_dragon
 Q.qsize() # 2
-Q.get() # 1
+Q.get() # 1 (pop과 기능 동일)
 Q.qsize() # 1
+
+#First-In-First-Out
+qlist = []
+
+def enqueue(qlist, data):
+    qlist.append(data)
+   
+def dequeue(qlist):
+    data = qlist[0]
+    del qlist[0]
+    return data
